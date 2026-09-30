@@ -1,42 +1,46 @@
 # Linglan（铃澜）— Codex Pet
 
-冰蓝科技雪狼主题的 Q 版 Codex v2 动画宠物。
+银发异色瞳、冰蓝科技服装与铃铛的小雪狼桌面宠物。当前发布版：**v1.3**。
 
-当前发布版：**v1.2**（完整 v2 视线优化版）。悬停时保持正面站姿，仅以视线、头部与耳朵的细微变化跟随鼠标，不会切换为侧身或背身形态。
+## 预览
+
+![动作总览](preview/contact-sheet.png)
+
+![悬停新旧对照](preview/hover-comparison.gif)
+
+对照图左侧为 v1.2、右侧为 v1.3。另有[等待输入](preview/waiting-comparison.gif)、[任务执行](preview/running-comparison.gif)、[完成待查看](preview/review-comparison.gif)和[视线方向](preview/look-directions.png)预览。GIF 为动作演示，实际触发和播放方式以 Codex 客户端为准。
 
 ## 下载与安装
 
-下载仓库根目录的 `linglan-codex-pet-v1.2.zip`，解压后将其中的 `linglan` 文件夹复制到：
+下载仓库根目录的 [`linglan-codex-pet-v1.3.zip`](linglan-codex-pet-v1.3.zip)，解压后将其中的 `linglan` 文件夹复制到：
 
 - macOS / Linux：`~/.codex/pets/linglan`
-- Windows：`%USERPROFILE%\\.codex\\pets\\linglan`
+- Windows：`%USERPROFILE%\.codex\pets\linglan`
 
-然后打开 Codex 的 **Settings → Pets**，选择 **Refresh**，再选中 `Linglan（铃澜）`。
+若已安装旧版，请先备份原 `linglan` 文件夹，再替换。也可以直接使用仓库中的 [`linglan/pet.json`](linglan/pet.json) 与 [`linglan/spritesheet.webp`](linglan/spritesheet.webp)。目录结构应为 `pets/linglan/pet.json`，不要多套一层文件夹。随后在 Codex 桌面应用的 **Settings → Pets** 中点 **Refresh**，选择 **Linglan（铃澜）**。回退时恢复备份并再次刷新；旧版压缩包也保留在本仓库。
 
-## 动画规格
+## v1.3 动作
 
-- Codex Pet v2
-- 1536 × 2288 WEBP 图集
-- 8 × 11 布局，包含 9 种标准动作与 16 个微视线方向
-- 已完成图集结构与透明背景验证
+| 场景 | 客户端动作槽位 | 画面 |
+| --- | --- | --- |
+| 空闲 | idle | 安静待机，沿用 v1.2 |
+| 鼠标移入宠物 | jumping | 双脚保持落地，以轻微抬头和耳朵动作回应，不再跳起 |
+| 任务执行 | running | 专注思考，手靠近下巴和衣领 |
+| 需要输入或批准 | waiting | 双手轻摊掌询问 |
+| 完成、有未读结果 | review | 微笑并给出赞许手势 |
+| 失败或受阻 | failed | 沿用失败提示 |
+| 向左或向右拖动 | running-left / running-right | 沿用方向移动动作 |
+| 临时招呼 | waving | 沿用招呼动作 |
 
-## 许可
+16 个视线方向也沿用 v1.2。动作槽位名称由客户端定义；v1.3 仅更换上述四种动作的画面，不改变官方状态提示、触发优先级、帧时长、循环次数或其他功能。
 
-角色设定、图像和动画均保留全部权利。允许个人下载和本地使用；未经书面许可，不得再发布、商用、制作衍生发布或移除署名。
+## 规格与验证
 
-## 制作说明
+- Codex Pet v2 格式：`spriteVersionNumber: 2`（与作品版本 v1.3 不同）。
+- 透明 WebP 图集，1536 × 2288 像素；8 列 × 11 行，每格 192 × 208。
+- 包含 9 种标准动作与 16 个视线方向。
+- [`qa/`](qa/) 收录图集结构、透明背景、旧版保留行及动作预览的验证摘要。
 
-基于用户提供的角色设定图，由 Codex/ChatGPT 协助制作。
+## 许可与制作
 
-## v1.1 更新
-
-- 重绘九种标准状态动作，使待机、执行、等待、思考、审阅等状态更易区分。
-- 修复跳跃动作的比例不一致问题。
-- 重新设计悬停视线：固定正面 Q 版形象，仅做细微的视线、头耳变化。
-
-## v1.2 更新
-
-- 完成并替换 16 个 v2 视线方向单元，四个主方向与相邻过渡动作更加连续。
-- 保持悬停时的正面 Q 版比例，避免跳跃或视线状态切换时出现明显的比例变化。
-- 重新完成完整 v2 图集校验：1536 × 2288、8 × 11、透明背景、全部标准状态与视线行均通过结构验证。
-- 压缩包内附更新后的预览图与验证摘要，便于离线核对。
+基于用户提供的角色设定图，由 Codex / ChatGPT 协助制作。角色设定、图像和动画保留全部权利；允许个人下载和本地使用。完整约定见 [LICENSE.md](LICENSE.md)。

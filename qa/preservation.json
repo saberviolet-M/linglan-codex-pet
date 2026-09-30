@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "preserved_rows_pixel_identical": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "5": true,
+    "9": true,
+    "10": true
+  },
+  "sha256": "cc1175f6506aefe6977e1bf91a1d05d393d8ddfd080275ffedf5e22c6d3d6494",
+  "note": "Direction QA inherited from byte-identical accepted v1.2 rows; new rows each cleaned once in a separate transparent replacement layer."
+}

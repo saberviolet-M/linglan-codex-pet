@@ -1,0 +1,12 @@
+{
+  "decision": "accept",
+  "severity": "minor",
+  "failed_checks": [
+    "horizontal-1 A: 337.5 observed screen-right instead of screen-left",
+    "horizontal-1 B: 022.5 observed screen-left instead of screen-right"
+  ],
+  "labeled_evidence": "At normal pet size, 337.5 -> 000 -> 022.5 reads as a continuous near-up transition without a visible quadrant reversal or backtrack; up-axis evidence is clear in both intermediates.",
+  "continuity_evidence": "The final independent visual QA rated the top boundary pass. Deterministic continuity remained ok; the 337.5->000 area ratio was 1.0775 with no visible scale pop or broken silhouette.",
+  "hard_gates": "000/180 vertical and 090/270 horizontal cardinal pairs passed unanimously.",
+  "reviewed_by": "parent"
+}

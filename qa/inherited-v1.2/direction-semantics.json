@@ -1,0 +1,152 @@
+{
+  "ok": true,
+  "reviewed_by": "independent visual QA and explicit user preview confirmation",
+  "reviewed_at_size": "normal Codex pet display size plus labeled head zoom",
+  "directions": [
+    {
+      "direction": "000",
+      "verdict": "pass",
+      "expected": "up",
+      "observed": "up",
+      "reason": "Raised face and upward gaze are clear; the face remains horizontally centered.",
+      "horizontal_evidence": "centered",
+      "vertical_evidence": "raised face and upward gaze"
+    },
+    {
+      "direction": "022.5",
+      "verdict": "warning",
+      "expected": "up-right",
+      "observed": "up with a subtle conflicting horizontal micro-cue",
+      "reason": "The blind majority read the very small horizontal cue as screen-left, but labeled normal-size loop review found no principal-quadrant reversal or visible backtrack.",
+      "horizontal_evidence": "subtle and opposite-sign in blind review",
+      "vertical_evidence": "upward face and gaze are clear"
+    },
+    {
+      "direction": "045",
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "reason": "Eyes and face bias screen-right while the raised gaze remains visible.",
+      "horizontal_evidence": "face and gaze screen-right",
+      "vertical_evidence": "raised gaze"
+    },
+    {
+      "direction": "067.5",
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "reason": "Rightward face and gaze are clear with a retained upward component.",
+      "horizontal_evidence": "face and gaze screen-right",
+      "vertical_evidence": "upward component visible"
+    },
+    {
+      "direction": "090",
+      "verdict": "pass",
+      "expected": "right",
+      "observed": "right",
+      "reason": "The screen-right cardinal is unmistakable at normal pet size.",
+      "horizontal_evidence": "face and gaze screen-right",
+      "vertical_evidence": "not required"
+    },
+    {
+      "direction": "112.5",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "Rightward face orientation remains clear while eyelids and gaze begin lowering.",
+      "horizontal_evidence": "face and gaze screen-right",
+      "vertical_evidence": "eyelids and gaze lowered"
+    },
+    {
+      "direction": "135",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "Both the rightward and downward components are readable.",
+      "horizontal_evidence": "rightward face bias",
+      "vertical_evidence": "lowered face and gaze"
+    },
+    {
+      "direction": "157.5",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "A subtle rightward component is retained and the downward face and eyelids are clear.",
+      "horizontal_evidence": "subtle screen-right bias",
+      "vertical_evidence": "downward face and eyelids"
+    },
+    {
+      "direction": "180",
+      "verdict": "pass",
+      "expected": "down",
+      "observed": "down",
+      "reason": "The down cardinal is unmistakable and the face returns to horizontal center.",
+      "horizontal_evidence": "centered",
+      "vertical_evidence": "lowered face and gaze"
+    },
+    {
+      "direction": "202.5",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "A subtle leftward face and gaze are visible while the downward cue remains clear.",
+      "horizontal_evidence": "face and gaze screen-left",
+      "vertical_evidence": "downward face and eyelids"
+    },
+    {
+      "direction": "225",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "Both the leftward and downward components are readable.",
+      "horizontal_evidence": "leftward face bias",
+      "vertical_evidence": "lowered face and gaze"
+    },
+    {
+      "direction": "247.5",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "Leftward face and gaze remain clear with a retained downward component.",
+      "horizontal_evidence": "face and gaze screen-left",
+      "vertical_evidence": "downward component visible"
+    },
+    {
+      "direction": "270",
+      "verdict": "pass",
+      "expected": "left",
+      "observed": "left",
+      "reason": "The screen-left cardinal is unmistakable at normal pet size.",
+      "horizontal_evidence": "face and gaze screen-left",
+      "vertical_evidence": "not required"
+    },
+    {
+      "direction": "292.5",
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "reason": "Leftward face and gaze remain clear while the face begins lifting.",
+      "horizontal_evidence": "face and gaze screen-left",
+      "vertical_evidence": "face and gaze lifting"
+    },
+    {
+      "direction": "315",
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "reason": "Both the leftward and upward components are readable.",
+      "horizontal_evidence": "leftward face bias",
+      "vertical_evidence": "raised face and gaze"
+    },
+    {
+      "direction": "337.5",
+      "verdict": "warning",
+      "expected": "up-left",
+      "observed": "up with a subtle conflicting horizontal micro-cue",
+      "reason": "The blind majority read the very small horizontal cue as screen-right, but labeled normal-size review found a continuous transition into 000 with no visible backtrack.",
+      "horizontal_evidence": "subtle and opposite-sign in blind review",
+      "vertical_evidence": "upward face and gaze are clear"
+    }
+  ],
+  "conclusion": "All four cardinals and principal quadrants pass. The only warnings are opposite-sign horizontal micro-cues immediately around the up cardinal; independent final visual QA and the user-confirmed preview found no visible loop reversal."
+}

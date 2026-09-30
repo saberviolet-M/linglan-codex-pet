@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "verdict": "pass_with_minor_notes",
+  "review_type": "cross-agent ordered-frame visual review",
+  "rows": {
+    "jumping": {
+      "reviewer": "v13_running",
+      "verdict": "pass",
+      "reason": "Planted feet match the user-approved hover redesign; visible closed-eye smile; head/body and costume stay coherent; neutral endpoints.",
+      "note": "Ear/head response intentionally subtle."
+    },
+    "waiting": {
+      "reviewer": "v13_running",
+      "verdict": "pass",
+      "reason": "Both open palms rise and return together; no switching handedness, clipping or visible volume pop."
+    },
+    "running": {
+      "reviewer": "v13_hover",
+      "verdict": "pass",
+      "reason": "Hand near chin/collar combined with downward attention reads as thinking; neutral final pose matches idle.",
+      "note": "One half-closed-eye pose can look mildly sleepy; accepted in the full thinking sequence. This is processing, not locomotion."
+    },
+    "review": {
+      "reviewer": "v13_running",
+      "verdict": "pass",
+      "reason": "Same screen-right hand gives thumbs-up, opposite hand stays low; smile and neutral endpoints remain coherent."
+    }
+  },
+  "errors": [],
+  "limitations": [
+    "The image viewer displayed only the first GIF frame. Reviewers inspected every ordered pose in the contact sheet; no real-time desktop playback test is claimed.",
+    "Desktop selection and task-triggered animation behavior still require local user trial."
+  ],
+  "inherited_rows": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    9,
+    10
+  ],
+  "inherited_direction_qa": "inherited-v1.2/direction-semantics.json",
+  "inherited_direction_notes": "Two near-up intermediate micro-cue warnings remain accepted from v1.2. Those pixels are unchanged."
+}
